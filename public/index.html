@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <!-- TODO: make hero section -->
+      <div class="hero-section">
+        <h1>Invitation</h1>
+        <h2>New Website Coming Soon!</h2>
+        <p class="paragraph"><strong>We would love you to come our new website celebration party.</strong></p>
+        <a href="#form" class="button">Subscribe for Free!</a>
+      </div>
+    
+      <!-- Form Field -->
+      <section id="form">
+        <div class="wrapper">
+          <form action="/register" method="post">
+            <fieldset class="fieldset-full">
+              <legend>Please fill up our form!</legend>
+              <div class="form-wrapper">
+                <div class="text-fields">
+                  <p>
+                    <label for="fname">First name<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your First Name" required>
+                  </p>
+
+                  <p class="textarea">
+                    <label for="lname">Last name <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your Last Name" required>
+                  </p>
+
+                  <p class="textarea">
+                    <label for="email">Email <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="email" name="email" placeholder="How can we contact you?" required>
+                  </p>
+                </div>
+                  
+                    <label for="meal" class="label4">What is your favourite <strong>Meal</strong>?</label>
+                    <select name="meal" id="meal" form="option"> 
+                      <option value="Select">Please choose an option</option>             
+                      <option value="breakfast">Breakfast</option>
+                      <option value="brunch">Brunch</option>
+                      <option value="elevenses">Elevenses</option>
+                      <option value="lunch">Lunch</option>
+                      <option value="supper">Supper</option>
+                      <option value="dinner">Dinner</option>
+                    </select>
+                  
+                    <ul class="list-reset">
+                      <li>
+                        <input type="checkbox" name="selector" id="selector" value="selector">
+                        <label for="selector" class="label5">I would like to recieve promotional emails</label>
+                      </li>
+                    </ul>
+              
+                    <footer class="submit">
+                      <input type="submit" name="submit" value="Submit" class="btn">
+                    </footer>
+    
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+  </body>
+</html>

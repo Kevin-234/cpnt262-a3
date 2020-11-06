@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    margin: 0;
+    min-height: 900px;
+    
+    /* put image and organize */
+    background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(./Img/black-and-white-cigarette-classic-girl-smoking-vintage-Favim.com-65043_large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+  }
+  
+  /* TODO: Make hero-section prettier */
+  .hero-section {
+    display: block;
+    background-color: hsl(136deg, 0%, 0%, 30%);
+    text-align: center;
+    flex: 1;
+    border: #ffe4c8 solid 1px;
+    padding: 3em;
+    margin: 10%;
+   }
+  
+  h1, h2 {
+    font-size: 70px;
+    font-family: 'Playfair Display', serif;
+    color: #ffe4c8;
+    text-shadow: 2px 2px black;
+    margin-bottom: 1em; 
+  }
+  
+  .paragraph {
+    font-family: 'Playfair Display', serif;
+    color: #ffe4c8;
+    text-shadow: 2px 2px black;
+    font-size: 25px;
+    margin-bottom: 3em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Make button prettier and position */
+  .button {
+    color:#ffe4c8;
+    background-color: #000;
+    font-family: 'Crimson Text', serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    
+    /* design border */
+    border: solid 2px #ffe4c8;
+    border-radius: 4px;
+    padding: 10px 20px;
+  }
+  
+  .button:hover {
+    text-shadow:0px 0px 5px;
+    transition-duration: 220ms;
+  }
+  
+  /* make button clickable */
+  .button:active {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* forms */
+  #form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* position to the center and design it */
+  .wrapper {
+    display: grid;
+    max-width: 66ch;
+    /* height: 70vh; */
+    background-color: hsl(136deg, 0%, 0%, 30%);
+    text-align: left;
+    border: 1px solid #ffe4c8;
+    padding: 2em;
+    margin: auto;
+  }
+  
+  form .fieldset-full {
+    /* Make form contents spans height of form */
+    display: grid;
+  }
+  
+  fieldset {
+    /* remove fieldset border */
+    border: 0px;
+  }
+  
+  /* make it visible */
+  .fieldset-full, legend {
+    color: #ffe4c8;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  
+  label {
+    /* change label size */
+    font-size: 1.7rem;
+  }
+  
+  /* make input prettier */
+  #fname, #lname, #email {
+    width: 90%;
+    background: transparent;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #ffe4c8;
+  
+    display:flex;
+    align-items: flex-start;
+    
+    /* give a space between label and input */
+    margin-top: 2em;
+  }
+  
+  .text-field p{
+    /* centerize label and input */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  
+  /* make selection and checkbox font prettier */
+  .label4, .label5 {
+    color: #ffe4c8;
+    font-size: 18px;  
+  }
+  
+  .list-reset {
+    padding: 0px;
+  
+    /* give width to fit in in the form field */
+    width: 90%;
+  }
+  
+  /* checkbox: take out a dot  */
+  li {
+    list-style-type: none;
+  }
+  
+  /* position centervthe submit button */
+  .submit {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  /* Form Submit button size */
+  .btn {
+    width: 12ch;
+    height: 5ch;
+    background-color: black;
+    color: #ffe4c8;
+    font-size: .9rem;
+    font-family: 'Crimson Text', serif;
+  
+    border: 2px solid #ffe4c8;
+  }
+  
+  .btn:hover {
+    text-shadow:0px 0px 5px;
+    transition-duration: 220ms;
+  }
+  
+  /* make it clickable */
+  .btn:active {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Make it responsive */
+  @media screen and (max-width:1170px) {
+    h2 {
+      line-height: 2ch;
+      
+    }
+  }
