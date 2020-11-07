@@ -23,11 +23,13 @@ app.get('/',function(request,response){
   response.send({method: 'GET', message: 'Read Data'});
 });
 
+// 404 error 
 app.use(function(req, res) {
   res.status(404);
   res.send('404: File Not Found');
 });
 
+// default 8080, PORT = 8080
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, function(){
