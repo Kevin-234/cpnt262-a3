@@ -18,7 +18,6 @@ app.post('/register',function(request,response){
   response.send(`<p>Thanks, ${request.body.name}! We'll send newsletter updates to ${request.body.email}.</p>`);
 });
 
-
 app.get('/',function(request,response){
   console.log(request.method);
   response.send({method: 'GET', message: 'Read Data'});

@@ -10,13 +10,13 @@
     min-height: 900px;
     
     /* put image and organize */
-    background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(./Img/black-and-white-cigarette-classic-girl-smoking-vintage-Favim.com-65043_large.jpg);
+    background-image:  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(http://1.bp.blogspot.com/-FEzjqdyX3C4/TkbPy3QRwmI/AAAAAAAAAAU/70noI0pmC1I/s1600/black-and-white-cigarette-classic-girl-smoking-vintage-Favim.com-65043_large.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: black;
   }
-  
+
   /* TODO: Make hero-section prettier */
   .hero-section {
     display: block;
